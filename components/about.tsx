@@ -1,0 +1,93 @@
+"use client"
+
+import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
+import { Container } from "@/components/ui/container"
+import { FileText } from "lucide-react"
+import Link from "next/link"
+
+export default function About() {
+  return (
+    <section id="about" className="py-16 sm:py-20 md:py-24 relative overflow-hidden">
+      <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-primary/5 to-transparent"></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+
+      <Container>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center text-center mb-12 sm:mb-16"
+        >
+          <span className="text-primary font-medium">ABOUT ME</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-4">Who I Am</h2>
+          <div className="w-20 h-1.5 bg-primary rounded-full mb-6"></div>
+          <p className="text-base sm:text-lg text-foreground/70 max-w-3xl">
+            A multidisciplinary professional with a passion for innovation and creativity
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="relative max-w-md mx-auto lg:max-w-none"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-primary/5 rounded-3xl blur-lg"></div>
+            <div className="relative aspect-square rounded-3xl overflow-hidden">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC09298.jpg-nukuXdx1JyFAtWbSulOD7l109MxfEu.jpeg"
+                alt="Enyo Sam"
+                className="w-full h-full object-cover scale-[1.05]"
+                style={{ objectPosition: "50% 25%" }}
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-2xl shadow-lg">
+              <p className="text-2xl sm:text-3xl font-bold">6+</p>
+              <p className="text-sm">Years Experience</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="space-y-4 sm:space-y-6 max-w-lg mx-auto lg:max-w-none text-center lg:text-left"
+          >
+            <h3 className="text-2xl sm:text-3xl font-bold">
+              I'm Enyo Sam, a versatile professional with a passion for building innovative solutions
+            </h3>
+            <p className="text-foreground/70">
+              With over 6 years of experience across multiple disciplines, I've developed a unique skill set that allows
+              me to approach problems from different angles. My background as a 2x startup founder, product design, AI prompt engineering, and
+              product management has equipped me with the skills and experience to create user-centered solutions that drive business
+              growth.
+            </p>
+            <p className="text-foreground/70">
+              Beyond the tech world, I'm also passionate about creative expression. As the host of The Rescued Show
+              podcast, I explore fascinating stories and insights from diverse guests. Additionally, being a
+              recording artist allows me to channel my creativity through music.
+            </p>
+            <div className="flex justify-center lg:justify-start">
+              <Button className="rounded-full mt-4" asChild>
+                <Link
+                  href="https://docs.google.com/document/d/1EIfzi8L9ZESVGIdKC1-tKMqE0nwBS5TCPeKOqC1JKso/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FileText className="mr-2 h-4 w-4" /> Download CV
+                </Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </Container>
+    </section>
+  )
+}
+
