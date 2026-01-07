@@ -48,9 +48,9 @@ export default function Hero() {
         } as React.CSSProperties
       }
     >
-      <div className="absolute inset-0 spotlight -z-10"></div>
+      <div className="absolute inset-0 spotlight -z-10 pointer-events-none"></div>
       <div
-        className="absolute inset-0 -z-20 opacity-30"
+        className="absolute inset-0 -z-20 opacity-30 pointer-events-none"
         style={
           {
             "--grid-color": "185, 124, 85",
@@ -89,7 +89,7 @@ export default function Hero() {
               <h2 className="text-base sm:text-lg md:text-xl text-foreground/80 font-light">
                 <span className="font-medium text-primary">Startup Builder</span> •
                 <span className="font-medium text-primary"> Product Designer</span> •
-                <span className="font-medium text-primary"> AI Prompt Engineer</span> •
+                <span className="font-medium text-primary"> AI-native Developer</span> •
                 <span className="font-medium text-primary"> Podcast Host</span> •
                 <span className="font-medium text-primary"> Recording Artist</span>
               </h2>

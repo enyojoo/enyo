@@ -8,45 +8,31 @@ import { Container } from "@/components/ui/container"
 export default function Portfolio() {
   const projects = [
     {
-      title: "NovaMVP",
-      category: "Agency",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0JyHC2r2dJxQhj3J2RN8wzlstP4TUm.png",
-      link: "https://www.novamvp.com",
-      description: "We build functional MVPs, Apps and Websites for your idea in 10 days.",
-    },
-    {
       title: "Lanior",
       category: "Platform",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GFt1PQjsxip7DYLRKXSyi6PaPK3DnU.png",
-      link: "https://www.lanior.com",
+      link: "https://github.com/enyojoo/lanior",
       description: "Platform to access expert guidance to build lasting relationship and family.",
     },
     {
       title: "Fidarr",
       category: "Startups",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3dNNJ3XYr1PqCeDpvUozUf2cOdUvrx.png",
-      link: "https://www.fidarr.com/",
+      link: "https://github.com/enyojoo/fidarr",
       description: "Built a content streaming platform with music, video and podcast features.",
     },
     {
-      title: "Chatable AI",
-      category: "AI Tools",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ISPK0Shs4mL6RkfO7OXAIZNjTQM4FM.png",
-      link: "https://www.chatable.cc",
-      description: "Built a project with All-in-one AI tools for content generation.",
-    },
-    {
-      title: "Easner",
+      title: "EaseLMS",
       category: "Education",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kJafc5MhAG5vHExivILYjlSn05CSy3.png",
-      link: "https://www.easner.com",
-      description: "Built an Open-Source AI-powered Course Content Delivery platform.",
+      image: "https://cldup.com/xDE0cJVUSK.png",
+      link: "https://github.com/enyojoo/easelms",
+      description: "The Modern Open-Source Learning Management System",
     },
     {
       title: "Bukable",
       category: "Education",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2u9BGEI9dTMyXRftMl48QoBdq7UEQ0.png",
-      link: "https://www.bukable.co",
+      link: "https://bukableco.webflow.io/",
       description: "Co-founded a career mentorship and global internship platform for students.",
     },
   ]
@@ -68,8 +54,8 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-background">
-      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <Container className="px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -92,7 +78,7 @@ export default function Portfolio() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-8"
         >
           {projects.map((project, index) => (
             <motion.div

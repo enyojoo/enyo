@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
 import Link from "next/link"
 import { Youtube } from "lucide-react"
@@ -21,8 +20,8 @@ const AppleIcon = () => (
 export default function Podcast() {
   return (
     <section id="podcast" className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-secondary/30">
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-primary/20 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -31,44 +30,41 @@ export default function Podcast() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="space-y-6 text-center lg:text-left"
+            className="space-y-6 text-center lg:text-left relative z-10"
           >
-            <span className="text-primary font-medium">MY PODCAST</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">The Rescued Show</h2>
-            <p className="text-lg text-foreground/70">
+            <span className="text-primary font-medium select-text">MY PODCAST</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold select-text">The Rescued Show</h2>
+            <p className="text-lg text-foreground/70 select-text">
               Join me as I explore fascinating stories and insights from innovators, creators, and thought leaders
               across various industries. Each episode dives deep into their journeys, challenges, and the insights
               they've gained along the way.
             </p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-              <Button className="rounded-full" asChild>
-                <Link
-                  href="https://open.spotify.com/show/70ND2FoyboV6q0tC45jrIG"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <SpotifyIcon className="mr-2 h-5 w-5" /> Spotify
-                </Link>
-              </Button>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link
-                  href="https://podcasts.apple.com/us/podcast/your-apple-podcasts-id"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AppleIcon className="mr-2 h-5 w-5" />
-                  Apple
-                </Link>
-              </Button>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link
-                  href="https://www.youtube.com/channel/your-youtube-channel-id"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Youtube className="mr-2 h-4 w-4" /> YouTube
-                </Link>
-              </Button>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 relative z-20">
+              <Link
+                href="https://open.spotify.com/show/70ND2FoyboV6q0tC45jrIG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary text-primary-foreground px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
+              >
+                <SpotifyIcon className="h-5 w-5" /> Spotify
+              </Link>
+              <Link
+                href="https://podcasts.apple.com/us/podcast/your-apple-podcasts-id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-input bg-background px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
+              >
+                <AppleIcon className="h-5 w-5" />
+                Apple
+              </Link>
+              <Link
+                href="https://www.youtube.com/channel/your-youtube-channel-id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-input bg-background px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
+              >
+                <Youtube className="h-4 w-4" /> YouTube
+              </Link>
             </div>
           </motion.div>
 

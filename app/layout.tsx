@@ -10,14 +10,14 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Enyo Sam - Recording Artist | AI Prompt Engineer | Entrepreneur",
+  title: "Enyo Sam - Recording Artist | AI-native Developer | Entrepreneur",
   description:
-    "2x Startup Founder with 6+ years experience in Product Design & Management. AI Prompt Engineer crafting innovative solutions. Host of The Rescued Show podcast and Contemporary Christian Recording Artist.",
+    "2x Startup Founder with 7+ years experience in Product Design & Management. AI-native Developer crafting innovative solutions. Host of The Rescued Show podcast and Contemporary Christian Recording Artist.",
   keywords: [
     "Enyo Sam",
     "Startup Founder",
     "Product Designer",
-    "AI Prompt Engineer",
+    "AI-native Developer",
     "Product Manager",
     "Podcast Host",
     "Recording Artist",
@@ -32,24 +32,24 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://enyosam.com"),
   openGraph: {
-    title: "Enyo Sam - Recording Artist | AI Prompt Engineer | Entrepreneur",
+    title: "Enyo Sam - Recording Artist | AI-native Developer | Entrepreneur",
     description:
-      "2x Startup Founder with 6+ years experience in Product Design & Management. AI Prompt Engineer crafting innovative solutions. Host of The Rescued Show podcast and Contemporary Christian Recording Artist.",
+      "2x Startup Founder with 7+ years experience in Product Design & Management. AI-native Developer crafting innovative solutions. Host of The Rescued Show podcast and Contemporary Christian Recording Artist.",
     images: [
       {
         url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wprBiEoW0TMuUeKO6fnwiDQNwsqg99.png",
         width: 1200,
         height: 630,
-        alt: "Enyo Sam - Startup Builder, Product Designer, AI Prompt Engineer",
+        alt: "Enyo Sam - Startup Builder, Product Designer, AI-native Developer",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enyo Sam - Recording Artist | AI Prompt Engineer | Entrepreneur",
+    title: "Enyo Sam - Recording Artist | AI-native Developer | Entrepreneur",
     description:
-      "2x Startup Founder with 6+ years experience in Product Design & Management. AI Prompt Engineer crafting innovative solutions. Host of The Rescued Show podcast and Contemporary Christian Recording Artist.",
+      "2x Startup Founder with 7+ years experience in Product Design & Management. AI-native Developer crafting innovative solutions. Host of The Rescued Show podcast and Contemporary Christian Recording Artist.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wprBiEoW0TMuUeKO6fnwiDQNwsqg99.png"],
     creator: "@enyosaam",
   },

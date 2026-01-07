@@ -9,9 +9,9 @@ import Link from "next/link"
 export default function About() {
   return (
     <section id="about" className="py-16 sm:py-20 md:py-24 relative overflow-hidden">
-      <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-primary/5 to-transparent"></div>
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <Container>
         <motion.div
@@ -47,7 +47,7 @@ export default function About() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-2xl shadow-lg">
-              <p className="text-2xl sm:text-3xl font-bold">6+</p>
+              <p className="text-2xl sm:text-3xl font-bold">7</p>
               <p className="text-sm">Years Experience</p>
             </div>
           </motion.div>
@@ -63,15 +63,13 @@ export default function About() {
               I'm Enyo Sam, a versatile professional with a passion for building innovative solutions
             </h3>
             <p className="text-foreground/70">
-              With over 6 years of experience across multiple disciplines, I've developed a unique skill set that allows
-              me to approach problems from different angles. My background as a 2x startup founder, product design, AI prompt engineering, and
-              product management has equipped me with the skills and experience to create user-centered solutions that drive business
-              growth.
+              2x Startup founder, AI-Native Developer, experienced in product management, business development, and a design professional with over 7 years of entrepreneurial experience, leading cross-functional teams in developing user-centric products, blending expertise in fintech, SaaS, and product development. I have built and launched multiple technology projects, including EdTech, SaaS platforms and MVPs for startups.
             </p>
             <p className="text-foreground/70">
-              Beyond the tech world, I'm also passionate about creative expression. As the host of The Rescued Show
-              podcast, I explore fascinating stories and insights from diverse guests. Additionally, being a
-              recording artist allows me to channel my creativity through music.
+              With a strong passion for innovation in startup environments, I specialize in product strategy, user experience, and business development, taking products from ideation to launch across various industries.
+            </p>
+            <p className="text-foreground/70">
+              Most recently, my work with building Easner as an API-first, invisible stablecoin cross-border payment infrastructure has been recognized under the Estonian Startup Visa program, providing a strong EU base to scale globally in compliance-driven fintech.
             </p>
             <div className="flex justify-center lg:justify-start">
               <Button className="rounded-full mt-4" asChild>

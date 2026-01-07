@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
 import Link from "next/link"
 import { Youtube } from "lucide-react"
@@ -21,8 +20,8 @@ const AppleIcon = () => (
 export default function Music() {
   return (
     <section id="music" className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-background">
-      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -31,37 +30,38 @@ export default function Music() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="space-y-6 text-center lg:text-left"
+            className="space-y-6 text-center lg:text-left relative z-10"
           >
-            <span className="text-primary font-medium">MY MUSIC</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Faith. Love. Hope.</h2>
-            <p className="text-lg text-foreground/70">
+            <span className="text-primary font-medium select-text">MY MUSIC</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold select-text">Faith. Love. Hope.</h2>
+            <p className="text-lg text-foreground/70 select-text">
               I'm a contemporary Christian and R&B/Soul artist, blending heartfelt lyrics with soulful melodies. I have a passion for authentic spirituality with my music reflecting my deep connection to God. I seek to inspire faith, love, hope and personal transformation through music.
             </p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-              <Button className="rounded-full" asChild>
-                <Link
-                  href="https://open.spotify.com/artist/1woz0y6hDwUzug2uIz6M7v"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <SpotifyIcon className="mr-2 h-5 w-5" /> Spotify
-                </Link>
-              </Button>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link
-                  href="https://music.apple.com/us/artist/enyo-sam/1468330821"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AppleIcon className="mr-2 h-5 w-5" /> Music
-                </Link>
-              </Button>
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link href="https://www.youtube.com/@enyosam/releases" target="_blank" rel="noopener noreferrer">
-                  <Youtube className="mr-2 h-4 w-4" /> YouTube
-                </Link>
-              </Button>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 relative z-20">
+              <Link
+                href="https://open.spotify.com/artist/1woz0y6hDwUzug2uIz6M7v"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-primary text-primary-foreground px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
+              >
+                <SpotifyIcon className="h-5 w-5" /> Spotify
+              </Link>
+              <Link
+                href="https://music.apple.com/us/artist/enyo-sam/1468330821"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-input bg-background px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
+              >
+                <AppleIcon className="h-5 w-5" /> Music
+              </Link>
+              <Link
+                href="https://www.youtube.com/@enyosam/releases"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-input bg-background px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
+              >
+                <Youtube className="h-4 w-4" /> YouTube
+              </Link>
             </div>
           </motion.div>
 

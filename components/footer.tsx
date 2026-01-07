@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-background pt-12 pb-6 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="container mx-auto px-2 relative z-5">
         <motion.div

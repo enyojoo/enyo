@@ -17,7 +17,7 @@ export default function Skills() {
       icon: <PenTool className="h-10 w-10 text-primary" />,
     },
     {
-      title: "AI Prompt Engineering",
+      title: "AI-native Development",
       description: "Crafting effective prompts to leverage AI capabilities for innovative solutions.",
       icon: <Terminal className="h-10 w-10 text-primary" />,
     },
@@ -55,8 +55,8 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-secondary/30">
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
       <Container className="px-4 sm:px-6 lg:px-8">
         <motion.div
