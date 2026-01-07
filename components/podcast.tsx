@@ -58,7 +58,7 @@ export default function Podcast() {
                 Apple
               </Link>
               <Link
-                href="https://www.youtube.com/channel/your-youtube-channel-id"
+                href="https://www.youtube.com/@therescuedshow"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-input bg-background px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"

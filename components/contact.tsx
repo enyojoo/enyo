@@ -16,7 +16,7 @@ export default function Contact() {
     {
       icon: <Calendar className="h-8 w-8 text-primary" />,
       title: "Availability",
-      value: "Open to opportunities",
+      value: "Open for collaborations",
     },
     {
       icon: <Clock className="h-8 w-8 text-primary" />,
