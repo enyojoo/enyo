@@ -1,10 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
-import { FileText } from "lucide-react"
-import Link from "next/link"
 
 export default function About() {
   return (
@@ -71,17 +68,6 @@ export default function About() {
             <p className="text-foreground/70">
               Most recently, my work with building Easner as an API-first, invisible stablecoin cross-border payment infrastructure has been recognized under the Estonian Startup Visa program, providing a strong EU base to scale globally in compliance-driven fintech.
             </p>
-            <div className="flex justify-center lg:justify-start">
-              <Button className="rounded-full mt-4" asChild>
-                <Link
-                  href="https://docs.google.com/document/d/1EIfzi8L9ZESVGIdKC1-tKMqE0nwBS5TCPeKOqC1JKso/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FileText className="mr-2 h-4 w-4" /> Download CV
-                </Link>
-              </Button>
-            </div>
           </motion.div>
         </div>
       </Container>
