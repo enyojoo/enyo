@@ -49,7 +49,7 @@ export default function Podcast() {
                 <SpotifyIcon className="h-5 w-5" /> Spotify
               </Link>
               <Link
-                href="https://podcasts.apple.com/us/podcast/your-apple-podcasts-id"
+                href="https://podcasts.apple.com/us/podcast/the-rescued-show/id1517107406"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-input bg-background px-6 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative z-10"
