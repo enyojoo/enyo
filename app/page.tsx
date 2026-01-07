@@ -16,8 +16,8 @@ export default function Home() {
       <About />
       <Skills />
       <Portfolio />
-      <Podcast />
       <Music />
+      <Podcast />
       <Contact />
       <Footer />
     </main>
