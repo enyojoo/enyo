@@ -60,10 +60,10 @@ export const metadata: Metadata = {
     siteName: "Enyo Sam",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wprBiEoW0TMuUeKO6fnwiDQNwsqg99.png",
+        url: "https://cldup.com/qr7qMsOwSs.png",
         width: 1200,
         height: 630,
-        alt: "Enyo Sam - 2x Startup Founder, AI-native Developer, Product Designer, Podcast Host, and Recording Artist",
+        alt: "Enyo Sam - Entrepreneur, AI-native Developer, Recording Artist",
       },
     ],
     locale: "en_US",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     title: "Enyo Sam - Entrepreneur | AI-native Developer | Recording Artist",
     description:
       "2x Startup founder and AI-native developer with 7+ years of entrepreneurial experience. Expert in product management, business development, and design. Built fintech, SaaS, and EdTech platforms.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wprBiEoW0TMuUeKO6fnwiDQNwsqg99.png"],
+    images: ["https://cldup.com/qr7qMsOwSs.png"],
     creator: "@enyosaam",
     site: "@enyosaam",
   },
@@ -118,7 +118,7 @@ const jsonLd = {
   description:
     "2x Startup founder and AI-native developer with 7+ years of entrepreneurial experience. Expert in product management, business development, and design.",
   url: "https://enyosam.com",
-  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wprBiEoW0TMuUeKO6fnwiDQNwsqg99.png",
+  image: "https://cldup.com/qr7qMsOwSs.png",
   sameAs: [
     "https://x.com/enyosaam",
     "https://www.linkedin.com/in/enyosam/",
