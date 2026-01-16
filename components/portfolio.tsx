@@ -8,11 +8,18 @@ import { Container } from "@/components/ui/container"
 export default function Portfolio() {
   const projects = [
     {
-      title: "Lanior",
+      title: "EaseLMS",
+      category: "Education",
+      image: "https://cldup.com/xDE0cJVUSK.png",
+      link: "https://www.easelms.org/",
+      description: "The Modern Open-Source Learning Management System",
+    },
+    {
+      title: "ElectivePRO",
       category: "Platform",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GFt1PQjsxip7DYLRKXSyi6PaPK3DnU.png",
-      link: "https://github.com/enyojoo/lanior",
-      description: "Platform to access expert guidance to build lasting relationship and family.",
+      image: "https://cldup.com/wYCOQU0RFs.png",
+      link: "https://www.electivepro.net/",
+      description: "An open-source platform that automates elective course selection",
     },
     {
       title: "Fidarr",
@@ -20,13 +27,6 @@ export default function Portfolio() {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3dNNJ3XYr1PqCeDpvUozUf2cOdUvrx.png",
       link: "https://github.com/enyojoo/fidarr",
       description: "Built a content streaming platform with music, video and podcast features.",
-    },
-    {
-      title: "EaseLMS",
-      category: "Education",
-      image: "https://cldup.com/xDE0cJVUSK.png",
-      link: "https://github.com/enyojoo/easelms",
-      description: "The Modern Open-Source Learning Management System",
     },
     {
       title: "Bukable",
