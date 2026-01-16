@@ -16,14 +16,14 @@ export default function Portfolio() {
     },
     {
       title: "ElectivePRO",
-      category: "Platform",
+      category: "Education",
       image: "https://cldup.com/wYCOQU0RFs.png",
       link: "https://www.electivepro.net/",
       description: "An open-source platform that automates elective course selection",
     },
     {
       title: "Fidarr",
-      category: "Startups",
+      category: "Content",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3dNNJ3XYr1PqCeDpvUozUf2cOdUvrx.png",
       link: "https://github.com/enyojoo/fidarr",
       description: "Built a content streaming platform with music, video and podcast features.",
